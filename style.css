@@ -120,6 +120,7 @@ hr{
 .answer-panel{
     overflow: hidden;
     max-height: 0;
+    text-align: left;
     transition: all .3s ease-in;
 }
 
