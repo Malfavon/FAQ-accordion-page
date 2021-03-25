@@ -36,13 +36,13 @@ hr{
     width: 1200px;
     max-width: 63%;
     height: 485px;
-    background-color: white;
-    border-radius: 1rem;
+    max-height: 100%;
     display: flex;
     flex-direction: row;
+    background-color: white;
+    border-radius: 1rem;
     align-items: center;
 }
-
 .ill-box{
     width: 50%;
     height: 100%;
@@ -50,6 +50,7 @@ hr{
     overflow: hidden;
 }
 .ill-box img{
+    display: block;
     position: absolute;
     left: -93px;
     top: 198px;
@@ -61,7 +62,7 @@ hr{
 
     height: 100%;
     width: 100%;
-    background-position: 113% 65%;
+    background-position: -580px -290px;
 }
 .woman-illustration{
     background-image: url(./images/illustration-woman-online-desktop.svg);
@@ -133,3 +134,47 @@ hr{
 }
 
 .attribution a { color: hsl(228, 45%, 44%); }
+    
+
+@media screen and (max-width: 1248px){
+    .faq-box{
+        display: block;
+        height: 600px;
+        max-height: 68%;
+        max-width: 90%;
+    }
+    .ill-box{
+        width: 100%;
+        height: 20%;
+    }
+    .ill-box img{
+        display: none;
+    }
+    .bg-pattern{
+        background-image: url(./images/bg-pattern-mobile.svg);
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+        background-position: center top;
+    }
+    .woman-illustration{
+        background-image: url(./images/illustration-woman-online-mobile.svg);
+        background-repeat: no-repeat;
+        position: absolute;
+        height: 196px;
+        width: 266px;
+        left: 50%;
+        top: -20%;
+        transform: translateX(-55%);
+        background-position: center;
+    }
+    .text-container {
+        width: 85%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+    .accordion:hover h3{
+        color: hsl(237, 12%, 33%);
+    }
+}
